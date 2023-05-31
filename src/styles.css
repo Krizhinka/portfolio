@@ -3,7 +3,6 @@
   --primary-color: #0797f7;
   /* --secondary-color: #b7e0fc; */
   --secondary-color: #aedfff;
-  --border-radius: 5px;
 }
 
 body {
@@ -62,7 +61,6 @@ div.contact-me {
 .contact-me-link {
   border: 2px solid var(--branding-color);
   background: var(--primary-color);
-  border-radius: var(--border-radius);
   color: var(--branding-color);
   font-size: 24px;
   line-height: 27px;
@@ -78,7 +76,7 @@ div.contact-me {
   transition: all 150ms ease-in-out;
 }
 
-.row {
+.home-section .row {
   margin: 80px auto;
 }
 
@@ -97,7 +95,7 @@ div.contact-me {
   font-size: 18px;
 }
 
-.img-fluid {
+.home-section .img-fluid {
   display: block;
   margin: 50px auto;
   max-width: 100%;
@@ -105,11 +103,45 @@ div.contact-me {
   cursor: pointer;
 }
 
+.about-section {
+  padding: 180px 0 50px;
+}
+
+.about-section h1 {
+  color: black;
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.about-section h3 {
+  font-size: 28px;
+  margin-bottom: 60px;
+}
+
+.about-section p {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 80px;
+}
+
+.about-section-content {
+  margin: 100px 30px;
+}
+
+/* .about-section .img-fluid {
+  display: block;
+  margin: 30px auto;
+  border-radius: 5px;
+}
+ */
+  
+
 .bg-body-branding {
   background: var(--branding-color) !important;
 }
 
-div.bg-body-branding {
+div .bg-body-branding {
   border: 2px solid var(--primary-color);
 }
 
@@ -123,7 +155,6 @@ div.bg-body-branding {
 
 .project-link {
   border: 2px solid var(--primary-color);
-  border-radius: var(--border-radius);
   background: var(--branding-color);
   color: var(--primary-color);
   text-decoration: none;
@@ -139,25 +170,35 @@ div.bg-body-branding {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .hero {
-    padding: 80px 0 30px;
+    padding: 80px 8px 30px;
+    margin: 0 0 40px;
   }
   .hero h1 {
     font-size: 42px;
   }
   .hero h2 {
-    font-size: 24px;
+    font-size: 30px;
   }
   .hero h3 {
-    font-size: 18px;
+    font-size: 24px;
+  }
+  div.contact-me {
+    margin: 60px auto;
   }
   .hero p {
     font-size: 20px;
+    padding: 0;
   }
   h2 {
     font-size: 24px;
   }
+
+  .home-section .row {
+    margin: 10px 0;
+  }
+
   .project-description {
     text-align: center;
     margin: 0;
@@ -167,5 +208,37 @@ div.bg-body-branding {
   }
   .project-link {
     font-size: 18px;
+  }
+
+  .about-section {
+    padding: 80px 0px 30px;
+    text-align: center;
+  }
+  .about-section-content {
+    margin: 0;
+    padding: 20px 8px 30px;
+    text-align: center;
+  }
+
+  .about-section-content h1 {
+    color: black;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  .about-section-content h3 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .about-section-content p {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 50px;
+  }
+  .about-section .img-fluid {
+    display: block;
+    margin: 30px auto;
   }
 }
