@@ -1,13 +1,28 @@
 :root {
   --branding-color: #f5ed79;
   --primary-color: #0797f7;
-  /* --secondary-color: #b7e0fc; */
   --secondary-color: #aedfff;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background: var(--secondary-color);
+}
+
+.navbar.border {
+  border: 2px solid var(--primary-color) !important;
+}
+
+.bg-body-branding {
+  background: var(--branding-color) !important;
+}
+
+div .bg-body-branding {
+  border: 2px solid var(--primary-color);
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
 }
 
 .hero {
@@ -38,7 +53,7 @@ body {
 
 .hero h3 {
   color: black;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 400;
 }
 
@@ -80,8 +95,20 @@ div.contact-me {
   margin: 80px auto;
 }
 
+.home-section .col {
+  /* margin: 0 10px; */
+}
+
+.home-section .img-fluid {
+  display: block;
+  margin: 50px auto;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
 .project-description {
-  margin: 0 40px;
+  margin: 0 10px;
   padding: 0;
 }
 
@@ -93,64 +120,6 @@ div.contact-me {
   display: block;
   text-align: left;
   font-size: 18px;
-}
-
-.home-section .img-fluid {
-  display: block;
-  margin: 50px auto;
-  max-width: 100%;
-  height: auto;
-  cursor: pointer;
-}
-
-.about-section {
-  padding: 180px 0 50px;
-}
-
-.about-section h1 {
-  color: black;
-  font-size: 64px;
-  font-weight: 500;
-  margin-bottom: 60px;
-}
-
-.about-section h3 {
-  font-size: 28px;
-  margin-bottom: 60px;
-}
-
-.about-section p {
-  text-align: left;
-  font-size: 18px;
-  margin-bottom: 80px;
-}
-
-.about-section-content {
-  margin: 100px 30px;
-}
-
-/* .about-section .img-fluid {
-  display: block;
-  margin: 30px auto;
-  border-radius: 5px;
-}
- */
-  
-
-.bg-body-branding {
-  background: var(--branding-color) !important;
-}
-
-div .bg-body-branding {
-  border: 2px solid var(--primary-color);
-}
-
-.navbar.border {
-  border: 2px solid var(--primary-color) !important;
-}
-
-.text-primary {
-  color: var(--primary-color) !important;
 }
 
 .project-link {
@@ -170,27 +139,85 @@ div .bg-body-branding {
   cursor: pointer;
 }
 
-@media (max-width: 990px) {
+.about-section {
+  padding: 110px 0 50px;
+}
+
+.about-section-content {
+  margin: 100px 0;
+}
+
+.about-section-content h1 {
+  color: black;
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+
+.about-section-content h3 {
+  font-size: 28px;
+  margin-bottom: 90px;
+}
+
+.about-section-content p {
+  text-align: left;
+  font-size: 22px;
+  margin-bottom: 110px;
+}
+
+.about-section .img-fluid {
+  display: block;
+  margin: 0 auto;
+}
+
+.work-section-content {
+  margin: 150px 0 0;
+}
+.work-section-content .img-fluid {
+  cursor: pointer;
+}
+
+.work-section-content h1 {
+  color: black;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+
+.work-section-content h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
   .hero {
     padding: 80px 8px 30px;
     margin: 0 0 40px;
   }
+
   .hero h1 {
     font-size: 42px;
   }
+
   .hero h2 {
     font-size: 30px;
   }
+
   .hero h3 {
     font-size: 24px;
   }
+
   div.contact-me {
     margin: 60px auto;
   }
+
   .hero p {
     font-size: 20px;
     padding: 0;
   }
+
   h2 {
     font-size: 24px;
   }
@@ -203,9 +230,11 @@ div .bg-body-branding {
     text-align: center;
     margin: 0;
   }
+
   .project-description h2 {
     font-size: 24px;
   }
+
   .project-link {
     font-size: 18px;
   }
@@ -214,6 +243,12 @@ div .bg-body-branding {
     padding: 80px 0px 30px;
     text-align: center;
   }
+
+  .about-section .img-fluid {
+    display: block;
+    margin: 30px auto;
+  }
+
   .about-section-content {
     margin: 0;
     padding: 20px 8px 30px;
@@ -229,16 +264,31 @@ div .bg-body-branding {
 
   .about-section-content h3 {
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   .about-section-content p {
     font-size: 18px;
     text-align: center;
-    margin: 0 0 50px;
+    margin: 0 0 70px;
   }
-  .about-section .img-fluid {
-    display: block;
-    margin: 30px auto;
+
+  .work-section-content {
+    margin: 100px 0 0;
+  }
+
+  .work-section-content h1 {
+    font-size: 42px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .work-section-content h2 {
+    font-size: 22px;
+  }
+
+  .work-section-content p {
+    font-size: 16px;
+    text-align: center;
   }
 }
