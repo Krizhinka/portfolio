@@ -96,7 +96,7 @@ div.contact-me {
 }
 
 .home-section .col {
-  /* margin: 0 10px; */
+  margin: 0 20px;
 }
 
 .home-section .img-fluid {
@@ -127,8 +127,8 @@ div.contact-me {
   background: var(--branding-color);
   color: var(--primary-color);
   text-decoration: none;
-  font-size: 24px;
-  padding: 16px 20px;
+  font-size: 20px;
+  padding: 20px 20px;
 }
 
 .project-link:hover {
@@ -140,7 +140,7 @@ div.contact-me {
 }
 
 .about-section {
-  padding: 110px 0 50px;
+  padding: 100px 0 50px;
 }
 
 .about-section-content {
@@ -152,18 +152,18 @@ div.contact-me {
   font-size: 58px;
   font-weight: 500;
   line-height: 1.4;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .about-section-content h3 {
   font-size: 28px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 .about-section-content p {
   text-align: left;
   font-size: 22px;
-  margin-bottom: 110px;
+  margin-bottom: 100px;
 }
 
 .about-section .img-fluid {
@@ -172,8 +172,9 @@ div.contact-me {
 }
 
 .work-section-content {
-  margin: 150px 0 0;
+  margin: 100px 0 0;
 }
+
 .work-section-content .img-fluid {
   cursor: pointer;
 }
@@ -190,6 +191,35 @@ div.contact-me {
   font-size: 36px;
   margin-bottom: 0;
 }
+
+.contact-section-content {
+  margin: 100px 0;
+}
+
+.contact-section-content h1 {
+  color: black;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+
+.contact-section-content h3 {
+  font-size: 28px;
+  margin: 40px 0 10px;}
+
+.contact-section-content p {
+  text-align: left;
+  font-size: 20px;
+}
+
+.email-link,
+.linkedin-link,
+.github-link {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+ 
 
 @media (max-width: 768px) {
   .hero {
@@ -291,4 +321,27 @@ div.contact-me {
     font-size: 16px;
     text-align: center;
   }
+
+  .contact-section-content {
+    margin: 80px auto;
+    padding: 20px 8px 30px;
+    text-align: center;
+  }
+
+  .contact-section-content h1 {
+    color: black;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  .contact-section-content h3 {
+    font-size: 20px;
+  }
+
+  .contact-section-content p {
+    font-size: 18px;
+    text-align: center;
+  }
+
 }
