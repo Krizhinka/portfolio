@@ -69,7 +69,7 @@ div .bg-body-branding {
   /* background: var(--branding-color); */
 }
 
-div.contact-me {
+.hero .contact-me {
   margin: 100px auto;
 }
 
@@ -140,7 +140,7 @@ div.contact-me {
 }
 
 .about-section {
-  padding: 100px 0 50px;
+  padding: 100px 0 0;
 }
 
 .about-section-content {
@@ -192,8 +192,14 @@ div.contact-me {
   margin-bottom: 0;
 }
 
+.work-section-content p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+
 .contact-section-content {
-  margin: 100px 0;
+  margin: 100px 0 0;
 }
 
 .contact-section-content h1 {
@@ -206,20 +212,83 @@ div.contact-me {
 
 .contact-section-content h3 {
   font-size: 28px;
-  margin: 40px 0 10px;}
+  margin: 40px 0 0;
+}
 
 .contact-section-content p {
   text-align: left;
   font-size: 20px;
 }
 
-.email-link,
+.contact-section-content .email-link,
 .linkedin-link,
 .github-link {
   color: var(--primary-color);
   cursor: pointer;
 }
- 
+
+footer {
+  margin: 80px 0;
+}
+
+footer .contact-box {
+  background: linear-gradient(
+    to top,
+    var(--branding-color) 0%,
+    var(--primary-color) 100%
+  );
+  border: 2px solid var(--primary-color);
+  margin-bottom: 80px;
+}
+
+footer .contact-box .inquiry {
+  margin: 30px 0 20px 50px;
+}
+
+footer .contact-box h2 {
+  font-size: 46px;
+}
+
+footer .contact-box p {
+  font-size: 18px;
+}
+
+footer .contact-box .contact-me {
+  margin: 65px 50px 20px 0;
+}
+
+footer .email-link {
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 24px;
+  padding: 18px 20px;
+  color: var(--primary-color);
+  background: var(--branding-color);
+  border: 2px solid var(--primary-color);
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+  background: var(--primary-color);
+  border: 2px solid var(--branding-color);
+  transition: all 150ms ease-in-out;
+}
+
+footer .social-links a {
+  color: var(--primary-color);
+  background: var(--branding-color);
+  border: 2px solid var(--primary-color);
+  font-size: 18px;
+  margin: 0 20px;
+  padding: 10px 15px;
+}
+
+footer .social-links a:hover {
+  color: var(--branding-color);
+  background: var(--primary-color);
+  border: 2px solid var(--branding-color);
+  transition: all 150ms ease-in-out;
+}
 
 @media (max-width: 768px) {
   .hero {
@@ -256,6 +325,10 @@ div.contact-me {
     margin: 10px 0;
   }
 
+  .home-section .col {
+    margin: 0 10px;
+  }
+
   .project-description {
     text-align: center;
     margin: 0;
@@ -267,10 +340,11 @@ div.contact-me {
 
   .project-link {
     font-size: 18px;
+    padding: 16px 14px;
   }
 
   .about-section {
-    padding: 80px 0px 30px;
+    padding: 80px 0 0;
     text-align: center;
   }
 
@@ -323,8 +397,8 @@ div.contact-me {
   }
 
   .contact-section-content {
-    margin: 80px auto;
-    padding: 20px 8px 30px;
+    margin: 80px 0 0;
+    padding: 20px 8px 0;
     text-align: center;
   }
 
@@ -344,4 +418,8 @@ div.contact-me {
     text-align: center;
   }
 
+  footer .email-link {
+    font-size: 20px;
+    padding: 16px 16px;
+  }
 }
