@@ -228,6 +228,10 @@ div .bg-body-branding {
   cursor: pointer;
 }
 
+.contact-section footer {
+  margin: 64px 0 80px;
+}
+
 footer {
   margin: 80px 0;
 }
@@ -443,10 +447,6 @@ footer p a:hover {
   .contact-section-content p {
     font-size: 18px;
     text-align: center;
-  }
-
-  .contact-section footer {
-    margin: 64px 0 80px;
   }
 
   footer {
